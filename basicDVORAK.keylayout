@@ -165,7 +165,21 @@ For more information, please refer to <http://unlicense.org>
 			<key code="49" output=" "/>
 
 		<!-- Tab key -->
-			<key code="48" output="&#x0009;" />
+			<key code="48" output="&#x0009;"/>
+
+		<!-- Enter key -->
+			<key code="36" output="&#x000d;"/>
+
+		<!-- Delete key -->
+			<key code="51" output="&#x0008;"/>
+
+		<!-- Arrow keys -->
+			<key code="126" output="&#x001e;"/> <!-- 126 is up arrow key -->
+			<key code="123" output="&#x001c;"/> <!-- 123 is left arrow key -->
+			<key code="125" output="&#x001f;"/> <!-- 125 is down arrow key -->
+			<key code="124" output="&#x001d;"/> <!-- 124 is right arrow key -->
+
+
 		</keyMap>
 	</keyMapSet>
 </keyboard>
