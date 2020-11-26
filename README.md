@@ -16,4 +16,4 @@ https://developer.apple.com/library/archive/technotes/tn2056/_index.html
 
 
 ## History
-First started on November 25, 2020 by Elsanussi Mneina. Intended to become a template for DVORAK keyboards in the public domain.
+Started on November 25, 2020. Intended to become a template for DVORAK keyboards in the public domain.
