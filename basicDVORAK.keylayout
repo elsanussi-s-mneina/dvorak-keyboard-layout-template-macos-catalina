@@ -29,7 +29,7 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-878" name="basicDVORAKv0.6">
+<keyboard group="126" id="-878" name="basicDVORAKv0.7">
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -43,7 +43,7 @@ For more information, please refer to <http://unlicense.org>
 		</keyMapSelect>
 	</modifierMap>
 	<keyMapSet id="mapSet">
-		<keyMap index="0">
+		<keyMap index="0" baseMapSet="defaultKeys" baseIndex="0">
 		<!-- Top row, from left to right on ANSI Keyboard -->
 			<key code="50" output="`"/>
 			<key code="18" output="1"/>
@@ -98,27 +98,8 @@ For more information, please refer to <http://unlicense.org>
 			<key code="43" output="w"/>
 			<key code="47" output="v"/>
 			<key code="44" output="z"/>
-
-		<!-- Space bar -->
-			<key code="49" output=" "/>
-
-		<!-- Tab key -->
-			<key code="48" output="&#x0009;" />
-
-		<!-- Enter key -->
-			<key code="36" output="&#x000d;"/>
-
-		<!-- Delete key -->
-			<key code="51" output="&#x0008;"/>
-
-		<!-- Arrow keys -->
-			<key code="126" output="&#x001e;"/> <!-- 126 is up arrow key -->
-			<key code="123" output="&#x001c;"/> <!-- 123 is left arrow key -->
-			<key code="125" output="&#x001f;"/> <!-- 125 is down arrow key -->
-			<key code="124" output="&#x001d;"/> <!-- 124 is right arrow key -->
-
 		</keyMap>
-		<keyMap index="1">
+		<keyMap index="1" baseMapSet="defaultKeys" baseIndex="0">
 		<!-- Top row, from left to right -->
 			<key code="50" output="~"/>
 			<key code="18" output="!"/>
@@ -174,6 +155,10 @@ For more information, please refer to <http://unlicense.org>
 			<key code="47" output="V"/>
 			<key code="44" output="Z"/>
 
+		</keyMap>
+	</keyMapSet>
+	<keyMapSet id="defaultKeys">
+		<keyMap index="0">
 		<!-- Space bar -->
 			<key code="49" output=" "/>
 
@@ -191,8 +176,8 @@ For more information, please refer to <http://unlicense.org>
 			<key code="123" output="&#x001c;"/> <!-- 123 is left arrow key -->
 			<key code="125" output="&#x001f;"/> <!-- 125 is down arrow key -->
 			<key code="124" output="&#x001d;"/> <!-- 124 is right arrow key -->
-
-
 		</keyMap>
+
 	</keyMapSet>
+
 </keyboard>
