@@ -29,7 +29,7 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-878" name="basicDVORAKv0.8">
+<keyboard group="126" id="-878" name="basicDVORAKv0.81">
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -179,9 +179,11 @@ For more information, please refer to <http://unlicense.org>
 			<!-- Tab key -->
 			<key code="48" output="&#x0009;"/>
 
+			<!-- Enter key -->
+			<key code="36" output="&#x000D;"/>
+
 			<!-- Space bar -->
 			<key code="49" output=" "/>
-			<key code="50" output=" "/>
 
 			<!-- backspace -->
 			<key code="51" output="&#x0008;"/>
