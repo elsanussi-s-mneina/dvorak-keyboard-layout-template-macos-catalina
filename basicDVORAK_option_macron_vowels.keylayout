@@ -29,7 +29,7 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-879" name="basicDVORAK (option acute vowels)">
+<keyboard group="126" id="-880" name="basicDVORAK (option macron vowels)">
 	<!-- version 0.84. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
 	<!-- This is a template for creating a DVORAK layout with characters that can be accessed by holding down option first -->
 	<layouts>
@@ -275,14 +275,14 @@ For more information, please refer to <http://unlicense.org>
 		<!-- Top row, from left to right -->
 
 		<!-- Second row from top, from left to right -->
-			<key code="17" output="ý"/>
+			<key code="17" output="ȳ"/>
 
 		<!-- Third row from top, from left to right -->
-			<key code="0" output="á"/>
-			<key code="1" output="ó"/>
-			<key code="2" output="é"/>
-			<key code="3" output="ú"/>
-			<key code="5" output="í"/>
+			<key code="0" output="ā"/>
+			<key code="1" output="ō"/>
+			<key code="2" output="ē"/>
+			<key code="3" output="ū"/>
+			<key code="5" output="ī"/>
 
 		<!-- Fourth row from top, from left to right -->
 		</keyMap>
@@ -292,14 +292,14 @@ For more information, please refer to <http://unlicense.org>
 		<!-- Top row, from left to right -->
 
 		<!-- Second row from top, from left to right -->
-			<key code="17" output="Ý"/>
+			<key code="17" output="Ȳ"/>
 
 		<!-- Third row from top, from left to right -->
-			<key code="0" output="Á"/>
-			<key code="1" output="Ó"/>
-			<key code="2" output="É"/>
-			<key code="3" output="Ú"/>
-			<key code="5" output="Í"/>
+			<key code="0" output="Ā"/>
+			<key code="1" output="Ō"/>
+			<key code="2" output="Ē"/>
+			<key code="3" output="Ū"/>
+			<key code="5" output="Ī"/>
 
 		<!-- Fourth row from top, from left to right -->
 		</keyMap>

@@ -2,7 +2,7 @@
  Trying to make a DVORAK Keyboard layout for Mac OS Catalina from scratch (partly to avoid copyright issues) using XML, and no keyboard editor.
 
 ## About this branch:
-You are on the branch that includes the ability to type vowels with an acute diacritic (they are: áóéúíý), and their majuscule counterparts, by first holding down the option key.
+You are on the branch that includes the ability to type vowels with a macron diacritic (they are: āōēūīȳ), and their majuscule counterparts, by first holding down the option key.
 
 This branch may be more useful than the main branch if you want some characters to be accessible by holding down the option key first.
 
