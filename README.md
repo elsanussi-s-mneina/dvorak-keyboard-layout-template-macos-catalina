@@ -31,13 +31,13 @@ Started on November 25, 2020. Intended to become a template for DVORAK keyboards
 - [Go to Colemak version][colemak-keyboard-layout-mac-template].
 
 
-[qwerty-keyboard-layout-mac-template][https://github.com/elsanussi-s-mneina/qwerty-keyboard-layout-template-macos-catalina
-]
-[colemak-keyboard-layout-mac-template][https://github.com/elsanussi-s-mneina/colemak-keyboard-layout-template-macos-catalina
-]
-[qwerty-keyboard-layout-mac-template][https://github.com/elsanussi-s-mneina/qwerty-keyboard-layout-template-macos-catalina
-]
-[dvorak-keyboard-layout-mac-template][https://github.com/elsanussi-s-mneina/dvorak-keyboard-layout-template-macos-catalina
-]
+[qwerty-keyboard-layout-mac-template]: https://github.com/elsanussi-s-mneina/qwerty-keyboard-layout-template-macos-catalina
+
+[colemak-keyboard-layout-mac-template]: https://github.com/elsanussi-s-mneina/colemak-keyboard-layout-template-macos-catalina
+
+[qwerty-keyboard-layout-mac-template]: https://github.com/elsanussi-s-mneina/qwerty-keyboard-layout-template-macos-catalina
+
+[dvorak-keyboard-layout-mac-template]: https://github.com/elsanussi-s-mneina/dvorak-keyboard-layout-template-macos-catalina
+
 
 [acute-vowels-on-option branch]: https://github.com/elsanussi-s-mneina/dvorak-keyboard-layout-template-macos-catalina/tree/acute-vowels-on-option
