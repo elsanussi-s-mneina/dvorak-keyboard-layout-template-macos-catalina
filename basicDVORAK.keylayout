@@ -29,7 +29,8 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-878" name="basicDVORAKv0.82">
+<keyboard group="126" id="-878" name="basicDVORAK">
+	<!-- version 0.82. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -38,7 +39,7 @@ For more information, please refer to <http://unlicense.org>
 			<modifier keys=""/>
 		</keyMapSelect>
 		<keyMapSelect mapIndex="1">
-			<modifier keys="shift"/>
+			<modifier keys="shift caps?"/>
 		</keyMapSelect>
 		<keyMapSelect mapIndex="2">
 			<modifier keys="caps"/>
@@ -158,27 +159,13 @@ For more information, please refer to <http://unlicense.org>
 			<key code="47" output="V"/>
 			<key code="44" output="Z"/>
 		</keyMap>
-		<keyMap index="2" baseMapSet="mapSet" baseIndex="3">
+		<keyMap index="2" baseMapSet="mapSet" baseIndex="0">
 		<!-- Caps lock -->
+		<!-- Caps lock is the same as lowercase, but with majuscule letters instead of miniscule letters.-->
+
 		<!-- Top row, from left to right -->
-			<key code="50" output="`"/>
-			<key code="18" output="1"/>
-			<key code="19" output="2"/>
-			<key code="20" output="3"/>
-			<key code="21" output="4"/>
-			<key code="23" output="5"/>
-			<key code="22" output="6"/>
-			<key code="26" output="7"/>
-			<key code="28" output="8"/>
-			<key code="25" output="9"/>
-			<key code="29" output="0"/>
-			<key code="27" output="["/>
-			<key code="24" output="]"/>
 
 		<!-- Second row from top, from left to right -->
-			<key code="12" output="&#39;"/> <!-- Single quote -->
-			<key code="13" output=","/>
-			<key code="14" output="."/>
 			<key code="15" output="P"/>
 			<key code="17" output="Y"/>
 			<key code="16" output="F"/>
@@ -186,9 +173,6 @@ For more information, please refer to <http://unlicense.org>
 			<key code="34" output="C"/>
 			<key code="31" output="R"/>
 			<key code="35" output="L"/>
-			<key code="33" output="/"/>
-			<key code="30" output="="/>
-			<key code="42" output="\"/>
 
 		<!-- Third row from top, from left to right -->
 			<key code="0" output="A"/>
@@ -201,10 +185,8 @@ For more information, please refer to <http://unlicense.org>
 			<key code="40" output="T"/>
 			<key code="37" output="N"/>
 			<key code="41" output="S"/>
-			<key code="39" output="-"/>
 
 		<!-- Fourth row from top, from left to right -->
-			<key code="6" output=";"/>
 			<key code="7" output="Q"/>
 			<key code="8" output="J"/>
 			<key code="9" output="K"/>
