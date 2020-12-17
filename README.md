@@ -1,6 +1,13 @@
 # DVORAK Keyboard Layout Template
  Trying to make a DVORAK Keyboard layout for Mac OS Catalina from scratch (partly to avoid copyright issues) using XML, and no keyboard editor.
 
+
+## More specialized templates included in this repository.
+### acute vowels on option (go to acute-vowels-on-option branch):
+Shows a way to program characters so that they will be written when when a key is pressed while an option key is held down. These characters are the vowels with acute characters lowercase and uppercase. I.e. ááóéúíý
+[Go to acute-vowels-on-option branch][acute-vowels-on-option branch].
+
+
 ## Main Reference used:
 Technical Note TN2056,
 https://developer.apple.com/library/archive/technotes/tn2056/_index.html
@@ -17,3 +24,5 @@ https://developer.apple.com/library/archive/technotes/tn2056/_index.html
 
 ## History
 Started on November 25, 2020. Intended to become a template for DVORAK keyboards in the public domain.
+
+[acute-vowels-on-option branch]: https://github.com/elsanussi-s-mneina/dvorak-keyboard-layout-template-macos-catalina/tree/acute-vowels-on-option
