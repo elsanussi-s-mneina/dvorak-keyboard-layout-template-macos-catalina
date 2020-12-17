@@ -29,8 +29,9 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-878" name="basicDVORAK">
+<keyboard group="126" id="-879" name="basicDVORAK (option acute vowels)">
 	<!-- version 0.82. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
+	<!-- This is a template for creating a DVORAK layout with characters that can be accessed by holding down option first -->
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
 	</layouts>
@@ -43,6 +44,12 @@ For more information, please refer to <http://unlicense.org>
 		</keyMapSelect>
 		<keyMapSelect mapIndex="2">
 			<modifier keys="caps"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="4">
+			<modifier keys="anyOption"/>
+		</keyMapSelect>
+		<keyMapSelect mapIndex="5">
+			<modifier keys="anyOption shift"/>
 		</keyMapSelect>
 	</modifierMap>
 	<keyMapSet id="mapSet">
@@ -259,5 +266,40 @@ For more information, please refer to <http://unlicense.org>
 			<key code="125" output="&#x001F;"/>
 			<key code="124" output="&#x001D;"/>
 		</keyMap>
+		<keyMap index="4" baseMapSet="mapSet" baseIndex="1">
+		<!-- When the user holds down the option key this is what happens -->
+		<!-- If nothing is defined in this keymap for the key that is pressed, it defaults to what happens when the key is pressed without an option is pressed. That is what setting baseIndex to 1 here does. -->
+		<!-- Top row, from left to right -->
+
+		<!-- Second row from top, from left to right -->
+			<key code="17" output="ý"/>
+
+		<!-- Third row from top, from left to right -->
+			<key code="0" output="á"/>
+			<key code="1" output="ó"/>
+			<key code="2" output="é"/>
+			<key code="3" output="ú"/>
+			<key code="5" output="í"/>
+
+		<!-- Fourth row from top, from left to right -->
+		</keyMap>
+		<keyMap index="5" baseMapSet="mapSet" baseIndex="2">
+		<!-- When the user holds down the shift and option key this is what happens -->
+		<!-- it defaults to what happens when the shift key is pressed -->
+		<!-- Top row, from left to right -->
+
+		<!-- Second row from top, from left to right -->
+			<key code="17" output="Ý"/>
+
+		<!-- Third row from top, from left to right -->
+			<key code="0" output="Á"/>
+			<key code="1" output="Ó"/>
+			<key code="2" output="É"/>
+			<key code="3" output="Ú"/>
+			<key code="5" output="Í"/>
+
+		<!-- Fourth row from top, from left to right -->
+		</keyMap>
+
 	</keyMapSet>
 </keyboard>
