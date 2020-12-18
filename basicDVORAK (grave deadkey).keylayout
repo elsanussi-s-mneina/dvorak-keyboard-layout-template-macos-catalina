@@ -29,7 +29,7 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-878" name="basicDVORAK">
+<keyboard group="126" id="-890" name="basicDVORAK (grave deadkey)">
 	<!-- version 0.82. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
@@ -48,7 +48,10 @@ For more information, please refer to <http://unlicense.org>
 	<keyMapSet id="mapSet">
 		<keyMap index="0" baseMapSet="mapSet" baseIndex="3">
 		<!-- Top row, from left to right on ANSI Keyboard -->
-			<key code="50" output="`"/>
+
+			<!-- HERE IT IS -->
+			<!-- We will make the backtick key a deadkey. instead of setting its output attribute we set its action attribute. We named the action "graveAccent". It is a reasonably descriptive name. It must match with whatever is defined in the action section. -->
+			<key code="50" action="graveAccentAction"/>
 			<key code="18" output="1"/>
 			<key code="19" output="2"/>
 			<key code="20" output="3"/>
@@ -67,7 +70,13 @@ For more information, please refer to <http://unlicense.org>
 			<key code="13" output=","/>
 			<key code="14" output="."/>
 			<key code="15" output="p"/>
-			<key code="17" output="y"/>
+			<key code="17">
+				<action>
+					<when state="none" output="y"/>
+					<when state="graveAccentState" output="ỳ"/>
+				</action>
+			</key>
+
 			<key code="16" output="f"/>
 			<key code="32" output="g"/>
 			<key code="34" output="c"/>
@@ -78,11 +87,36 @@ For more information, please refer to <http://unlicense.org>
 			<key code="42" output="\"/>
 
 		<!-- Third row from top, from left to right -->
-			<key code="0" output="a"/>
-			<key code="1" output="o"/>
-			<key code="2" output="e"/>
-			<key code="3" output="u"/>
-			<key code="5" output="i"/>
+			<key code="0">
+				<action>
+					<when state="none" output="a"/>
+					<when state="graveAccentState" output="à"/>
+				</action>
+			</key>
+			<key code="1">
+				<action>
+					<when state="none" output="o"/>
+					<when state="graveAccentState" output="ò"/>
+				</action>
+			</key>
+			<key code="2">
+				<action>
+					<when state="none" output="e"/>
+					<when state="graveAccentState" output="è"/>
+				</action>
+			</key>
+			<key code="3">
+				<action>
+					<when state="none" output="u"/>
+					<when state="graveAccentState" output="ù"/>
+				</action>
+			</key>
+			<key code="5">
+				<action>
+					<when state="none" output="i"/>
+					<when state="graveAccentState" output="ì"/>
+				</action>
+			</key>
 			<key code="4" output="d"/>
 			<key code="38" output="h"/>
 			<key code="40" output="t"/>
@@ -124,7 +158,12 @@ For more information, please refer to <http://unlicense.org>
 			<key code="13" output="&#60;"/> <!-- the output is the less than sign -->
 			<key code="14" output="&#62;"/> <!-- the output is the greater than sign -->
 			<key code="15" output="P"/>
-			<key code="17" output="Y"/>
+			<key code="17">
+				<action>
+					<when state="none" output="Y"/>
+					<when state="graveAccentState" output="Ỳ"/>
+				</action>
+			</key>
 			<key code="16" output="F"/>
 			<key code="32" output="G"/>
 			<key code="34" output="C"/>
@@ -135,11 +174,36 @@ For more information, please refer to <http://unlicense.org>
 			<key code="42" output="|"/>
 
 		<!-- Third row from top, from left to right -->
-			<key code="0" output="A"/>
-			<key code="1" output="O"/>
-			<key code="2" output="E"/>
-			<key code="3" output="U"/>
-			<key code="5" output="I"/>
+			<key code="0">
+				<action>
+					<when state="none" output="A"/>
+					<when state="graveAccentState" output="À"/>
+				</action>
+			</key>
+			<key code="1">
+				<action>
+					<when state="none" output="O"/>
+					<when state="graveAccentState" output="Ò"/>
+				</action>
+			</key>
+			<key code="2">
+				<action>
+					<when state="none" output="E"/>
+					<when state="graveAccentState" output="È"/>
+				</action>
+			</key>
+			<key code="3">
+				<action>
+					<when state="none" output="U"/>
+					<when state="graveAccentState" output="Ù"/>
+				</action>
+			</key>
+			<key code="5">
+				<action>
+					<when state="none" output="I"/>
+					<when state="graveAccentState" output="Ì"/>
+				</action>
+			</key>
 			<key code="4" output="D"/>
 			<key code="38" output="H"/>
 			<key code="40" output="T"/>
@@ -167,7 +231,12 @@ For more information, please refer to <http://unlicense.org>
 
 		<!-- Second row from top, from left to right -->
 			<key code="15" output="P"/>
-			<key code="17" output="Y"/>
+			<key code="17">
+				<action>
+					<when state="none" output="Y"/>
+					<when state="graveAccentState" output="Ỳ"/>
+				</action>
+			</key>
 			<key code="16" output="F"/>
 			<key code="32" output="G"/>
 			<key code="34" output="C"/>
@@ -175,11 +244,36 @@ For more information, please refer to <http://unlicense.org>
 			<key code="35" output="L"/>
 
 		<!-- Third row from top, from left to right -->
-			<key code="0" output="A"/>
-			<key code="1" output="O"/>
-			<key code="2" output="E"/>
-			<key code="3" output="U"/>
-			<key code="5" output="I"/>
+			<key code="0">
+				<action>
+					<when state="none" output="A"/>
+					<when state="graveAccentState" output="À"/>
+				</action>
+			</key>
+			<key code="1">
+				<action>
+					<when state="none" output="O"/>
+					<when state="graveAccentState" output="Ò"/>
+				</action>
+			</key>
+			<key code="2">
+				<action>
+					<when state="none" output="E"/>
+					<when state="graveAccentState" output="È"/>
+				</action>
+			</key>
+			<key code="3">
+				<action>
+					<when state="none" output="U"/>
+					<when state="graveAccentState" output="Ù"/>
+				</action>
+			</key>
+			<key code="5">
+				<action>
+					<when state="none" output="I"/>
+					<when state="graveAccentState" output="Ì"/>
+				</action>
+			</key>
 			<key code="4" output="D"/>
 			<key code="38" output="H"/>
 			<key code="40" output="T"/>
@@ -260,4 +354,15 @@ For more information, please refer to <http://unlicense.org>
 			<key code="124" output="&#x001D;"/>
 		</keyMap>
 	</keyMapSet>
+	<!-- The following is the actions section it is necessary in order to implement dead keys. Dead keys are combinations of characters pressed in sequence that have a special output. -->
+	<actions>
+		<action id="graveAccentAction">
+			<when state="none" next="graveAccentState"/>
+			<!-- when the state is none the graveAccentAction action changes the state to the graveAccentState state. -->
+		</action>
+	</actions>
+	<!-- The following is the terminators section. It tells what the output should be when a key that is not defined is pressed after a dead key. -->
+	<terminators>
+		<when state="graveAccent" output="`"/>
+	</terminators>
 </keyboard>
