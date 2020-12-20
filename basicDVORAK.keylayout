@@ -30,9 +30,9 @@ For more information, please refer to <http://unlicense.org>
 -->
 
 <keyboard group="126" id="-878" name="basicDVORAK">
-	<!-- version 0.82. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
+	<!-- version 0.86. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
 	<layouts>
-		<layout first="0" last="0" modifiers="commonModifiers" mapSet="mapSet"/>
+		<layout first="0" last="0" modifiers="commonModifiers" mapSet="ISO_or_ANSI"/>
 	</layouts>
 	<modifierMap id="commonModifiers" defaultIndex="0">
 		<keyMapSelect mapIndex="0">
@@ -45,10 +45,13 @@ For more information, please refer to <http://unlicense.org>
 			<modifier keys="caps"/>
 		</keyMapSelect>
 	</modifierMap>
-	<keyMapSet id="mapSet">
-		<keyMap index="0" baseMapSet="mapSet" baseIndex="3">
+	<keyMapSet id="ISO_or_ANSI">
+		<keyMap index="0" baseMapSet="ISO_or_ANSI" baseIndex="3">
+		<!-- Top left key of ISO keyboard only (key code 10) -->
+			<key code="10" output="§"/>
+
 		<!-- Top row, from left to right on ANSI Keyboard -->
-			<key code="50" output="`"/>
+			<key code="50" output="`"/> <!-- This key with key code 50 is three two rows below on the ISO keyboard, but is on the number row on the ANSI keyboard. -->
 			<key code="18" output="1"/>
 			<key code="19" output="2"/>
 			<key code="20" output="3"/>
@@ -102,10 +105,14 @@ For more information, please refer to <http://unlicense.org>
 			<key code="47" output="v"/>
 			<key code="44" output="z"/>
 		</keyMap>
-		<keyMap index="1" baseMapSet="mapSet" baseIndex="3">
+		<keyMap index="1" baseMapSet="ISO_or_ANSI" baseIndex="3">
 		<!-- When the user holds down shift this is what happens -->
-		<!-- Top row, from left to right -->
-			<key code="50" output="~"/>
+
+		<!-- Top left key of ISO keyboard only (key code 10) -->
+			<key code="10" output="±"/>
+
+		<!-- Top row, from left to right on ANSI Keyboard -->
+			<key code="50" output="~"/> <!-- This key with key code 50 is three two rows below on the ISO keyboard, but is on the number row on the ANSI keyboard. -->
 			<key code="18" output="!"/>
 			<key code="19" output="@"/>
 			<key code="20" output="#"/>
@@ -159,7 +166,7 @@ For more information, please refer to <http://unlicense.org>
 			<key code="47" output="V"/>
 			<key code="44" output="Z"/>
 		</keyMap>
-		<keyMap index="2" baseMapSet="mapSet" baseIndex="0">
+		<keyMap index="2" baseMapSet="ISO_or_ANSI" baseIndex="0">
 		<!-- Caps lock -->
 		<!-- Caps lock is the same as lowercase, but with majuscule letters instead of miniscule letters.-->
 

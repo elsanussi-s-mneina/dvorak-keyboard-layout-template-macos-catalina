@@ -3,3 +3,6 @@ Apparently if some keys are not set to a value (such as the arrow key) they will
 
 2020-11-26, version 0.82
 Add support for caps lock. Enter key works properly again.
+
+2020-11-27, version 0.86
+Add support for the extra keycod that is in ISO keyboards but not in ANSI keyboards. 
