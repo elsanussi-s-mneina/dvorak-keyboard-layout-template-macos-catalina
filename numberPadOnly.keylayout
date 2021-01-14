@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This keyboard layout file is an example of how to implement a number pad. It only implements the number pad, and function keys/arrows. Other character keys do not work.-->
+<!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<!-- This is a hand-edited keyboard layout file. If you try to edit it in a keyboard layout program, the file will become disorganized, and the comments will no longer make sense. -->
+<!-- 
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org>
+
+-->
+
+<keyboard group="126" id="-878" name="numberPadOnly">
+	<!-- version 1.00. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
+	<layouts>
+		<layout first="0" last="0" modifiers="commonModifiers" mapSet="ISO_or_ANSI"/>
+	</layouts>
+	<modifierMap id="commonModifiers" defaultIndex="0">
+		<keyMapSelect mapIndex="0">
+			<modifier keys=""/>
+		</keyMapSelect>
+	</modifierMap>
+	<keyMapSet id="ISO_or_ANSI">
+		<keyMap index="0" baseMapSet="ISO_or_ANSI" baseIndex="1">
+
+		<!-- Number pad -->
+			<!-- first or top row of numpad-->
+			<key code="71" output="&#x001B;"/>
+			<key code="81" output="="/>
+			<key code="75" output="/"/>
+			<key code="67" output="*"/>
+
+			<!-- Second row of numpad-->
+			<key code="89" output="7"/>
+			<key code="91" output="8"/>
+			<key code="92" output="9"/>
+			<key code="78" output="-"/>
+
+			<!-- third row of numpad -->
+			<key code="86" output="4"/>
+			<key code="87" output="5"/>
+			<key code="88" output="6"/>
+			<key code="69" output="+"/>
+
+			<!-- fourth row of numpad -->
+			<key code="83" output="1"/>
+			<key code="84" output="2"/>
+			<key code="85" output="3"/>
+			<key code="76" output="&#x0003;"/>
+			<!-- Bottom row of numpad-->
+			<key code="82" output="0"/>
+			<key code="65" output="."/>
+		</keyMap>
+		<keyMap index="1">
+			<!-- This keymap supports proper function of the tab key, the arrow keys, and other important control keys. -->
+			<!-- You probably do not want to edit these -->
+			<!-- Top row, Esc, and function keys like F1, F2 -->
+			<key code="53" output="&#x001B;"/>
+			<key code="122" output="&#x0010;"/>
+			<key code="120" output="&#x0010;"/>
+			<key code="99" output="&#x0010;"/>
+			<key code="118" output="&#x0010;"/>
+			<key code="96" output="&#x0010;"/>
+			<key code="97" output="&#x0010;"/>
+			<key code="98" output="&#x0010;"/>
+			<key code="100" output="&#x0010;"/>
+			<key code="101" output="&#x0010;"/>
+			<key code="109" output="&#x0010;"/>
+			<key code="103" output="&#x0010;"/>
+			<key code="111" output="&#x0010;"/>
+			<key code="105" output="&#x0010;"/>
+			<key code="107" output="&#x0010;"/>
+			<key code="113" output="&#x0010;"/>
+
+			<!-- Tab key -->
+			<key code="48" output="&#x0009;"/>
+
+			<!-- Enter key -->
+			<key code="36" output="&#x000D;"/>
+
+			<!-- Space bar -->
+			<key code="49" output=" "/>
+
+			<!-- backspace -->
+			<key code="51" output="&#x0008;"/>
+
+<!-- -->
+			<key code="52" output="&#x0003;"/>
+			<key code="108" output="&#x0010;"/>
+			<key code="110" output="&#x0010;"/>
+			<key code="112" output="&#x0010;"/>
+
+
+<!-- -->
+
+			<!-- keys above arrow keys: Home, End Page Down, etc. -->
+			<key code="114" output="&#x0005;"/>
+			<key code="115" output="&#x0001;"/>
+			<key code="116" output="&#x000B;"/>
+			<key code="117" output="&#x007F;"/>
+			<key code="119" output="&#x0004;"/>
+			<key code="121" output="&#x000C;"/>
+
+
+			<key code="71" output="&#x001B;"/>
+			<key code="64" output="&#x0010;"/>
+			<key code="66" output="&#x001D;"/>
+			<key code="70" output="&#x001C;"/>
+			<key code="72" output="&#x001F;"/>
+			<key code="77" output="&#x001E;"/>
+			<key code="79" output="&#x0010;"/>
+			<key code="80" output="&#x0010;"/>
+			<key code="106" output="&#x0010;"/>
+
+			<!-- Number pad's Enter key: -->
+			<key code="76" output="&#x0003;"/>
+
+			<!-- Arrow keys -->
+			<key code="126" output="&#x001E;"/>
+			<key code="123" output="&#x001C;"/>
+			<key code="125" output="&#x001F;"/>
+			<key code="124" output="&#x001D;"/>
+		</keyMap>
+	</keyMapSet>
+</keyboard>
