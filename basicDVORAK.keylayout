@@ -29,7 +29,7 @@ For more information, please refer to <http://unlicense.org>
 
 -->
 
-<keyboard group="126" id="-878" name="basicDVORAK">
+<keyboard group="126" id="-878" name="basicDVORAK - NoCaps">
 	<!-- version 0.86. We do not put the version in the name because it adds extra steps when upgrading the layout.  -->
 	<layouts>
 		<layout first="0" last="0" modifiers="commonModifiers" mapSet="ISO_or_ANSI"/>
@@ -39,14 +39,11 @@ For more information, please refer to <http://unlicense.org>
 			<modifier keys=""/>
 		</keyMapSelect>
 		<keyMapSelect mapIndex="1">
-			<modifier keys="shift caps?"/>
-		</keyMapSelect>
-		<keyMapSelect mapIndex="2">
-			<modifier keys="caps"/>
+			<modifier keys="shift"/>
 		</keyMapSelect>
 	</modifierMap>
 	<keyMapSet id="ISO_or_ANSI">
-		<keyMap index="0" baseMapSet="ISO_or_ANSI" baseIndex="3">
+		<keyMap index="0" baseMapSet="ISO_or_ANSI" baseIndex="2">
 		<!-- Top left key of ISO keyboard only (key code 10) -->
 			<key code="10" output="§"/>
 
@@ -133,7 +130,7 @@ For more information, please refer to <http://unlicense.org>
 			<key code="82" output="0"/>
 			<key code="65" output="."/>
 		</keyMap>
-		<keyMap index="1" baseMapSet="ISO_or_ANSI" baseIndex="3">
+		<keyMap index="1" baseMapSet="ISO_or_ANSI" baseIndex="2">
 		<!-- When the user holds down shift this is what happens -->
 
 		<!-- Top left key of ISO keyboard only (key code 10) -->
@@ -222,73 +219,7 @@ For more information, please refer to <http://unlicense.org>
 			<key code="82" output="0"/>
 			<key code="65" output="."/>
 		</keyMap>
-		<keyMap index="2" baseMapSet="ISO_or_ANSI" baseIndex="0">
-		<!-- Caps lock -->
-		<!-- Caps lock is the same as lowercase, but with majuscule letters instead of miniscule letters.-->
-
-		<!-- Top row, from left to right -->
-
-		<!-- Second row from top, from left to right -->
-			<key code="15" output="P"/>
-			<key code="17" output="Y"/>
-			<key code="16" output="F"/>
-			<key code="32" output="G"/>
-			<key code="34" output="C"/>
-			<key code="31" output="R"/>
-			<key code="35" output="L"/>
-
-		<!-- Third row from top, from left to right -->
-			<key code="0" output="A"/>
-			<key code="1" output="O"/>
-			<key code="2" output="E"/>
-			<key code="3" output="U"/>
-			<key code="5" output="I"/>
-			<key code="4" output="D"/>
-			<key code="38" output="H"/>
-			<key code="40" output="T"/>
-			<key code="37" output="N"/>
-			<key code="41" output="S"/>
-
-		<!-- Fourth row from top, from left to right -->
-			<key code="7" output="Q"/>
-			<key code="8" output="J"/>
-			<key code="9" output="K"/>
-			<key code="11" output="X"/>
-			<key code="45" output="B"/>
-			<key code="46" output="M"/>
-			<key code="43" output="W"/>
-			<key code="47" output="V"/>
-			<key code="44" output="Z"/>
-
-		<!-- Number pad -->
-			<!-- first or top row of numpad-->
-			<key code="71" output="&#x001B;"/>
-			<key code="81" output="="/>
-			<key code="75" output="/"/>
-			<key code="67" output="*"/>
-
-			<!-- Second row of numpad-->
-			<key code="89" output="7"/>
-			<key code="91" output="8"/>
-			<key code="92" output="9"/>
-			<key code="78" output="-"/>
-
-			<!-- third row of numpad -->
-			<key code="86" output="4"/>
-			<key code="87" output="5"/>
-			<key code="88" output="6"/>
-			<key code="69" output="+"/>
-
-			<!-- fourth row of numpad -->
-			<key code="83" output="1"/>
-			<key code="84" output="2"/>
-			<key code="85" output="3"/>
-			<key code="76" output="&#x0003;"/>
-			<!-- Bottom row of numpad-->
-			<key code="82" output="0"/>
-			<key code="65" output="."/>
-		</keyMap>
-		<keyMap index="3">
+		<keyMap index="2">
 			<!-- This keymap supports proper function of the tab key, the arrow keys, and other important control keys. -->
 			<!-- You probably do not want to edit these -->
 			<!-- Top row, Esc, and function keys like F1, F2 -->
